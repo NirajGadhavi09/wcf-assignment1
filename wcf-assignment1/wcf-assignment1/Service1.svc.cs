@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using System.Web.Services.Description;
 
 namespace wcf_assignment1
 {
@@ -15,52 +16,32 @@ namespace wcf_assignment1
 
         public string primeNo(int num)
         {
-            Console.Write("Enter a prime number : ");
-            int number = int.Parse(Console.ReadLine());
-            bool IsPrime = true;
-            for (int i = 2; i < number / 2; i++)
+
+            int i;
+            int temp = num / 2;
+
+            for (i = 2; i <= temp; i++)
             {
-                if (number % i == 0)
+                if (num % i == 0)
                 {
-                    IsPrime = false;
                     break;
                 }
             }
-            if (IsPrime)
+            if (i > temp)
             {
-                Console.Write("It is Prime.");
+                return "It's a is Prime Number";
             }
             else
             {
-                Console.Write("It's not Prime.");
+                return "It's a not Prime Number";
             }
-            Console.ReadKey();
-
-            return IsPrime.ToString();
         }
 
-        public string sumOfDigit(int num)
-        {
-            int x, y, sum = 0;
-            x = 0;
-            while (x > 0)
-            {
-                y = x % 10;
-                sum = sum + y;
-                x = x / 10;
-            }
         
-            return sum.ToString();
-        }
 
         public string reverseString(string value)
         {
             string stringOutput = "";
-            //foreach (char c in value)
-            //{
-            //    stringOutput = c + stringOutput;
-            //}
-
             char[] reverseString = value.ToCharArray();
             Array.Reverse(reverseString);
             stringOutput = new string(reverseString);
@@ -72,30 +53,35 @@ namespace wcf_assignment1
             return string.Format("<{0}>{1}</{0}>", valueTag, htmlData);
         }
 
-        public string sortFiveNumbers(int[] num, string sortingNumbers)
+        public string sortFiveNumbers(string sortAscDesc, string sortingNumbers)
         {
-            string output = "";
-            Array.Sort(num);
-            if (sortingNumbers.Equals("Ascending"))
-            {
-                for (int i = 0; i < num.Length; i++)
-                {
-                    output += num[i].ToString() + ",";
-                }
-                output = output.Substring(0, output.Length - 1);
-            }
-            else if (sortingNumbers.Equals("Descending"))
-            {
-                for (int i = num.Length - 1; i >= 0; i--)
-                {
-                    output += num[i].ToString() + ",";
-                }
-                output = output.Substring(0, output.Length - 1);
-            }
-            else output = "Please enter a valid sorting number.";
 
-            return output;
+            int[] array = Array.ConvertAll(sortingNumbers.Split(','), x => int.Parse(x));
+            Array.Sort(array);
+            if (sortAscDesc == "Ascending" || sortAscDesc == "ascending")
+            {
+                return string.Join(",", array);
+            }
+            else if (sortAscDesc == "Descending" || sortAscDesc == "descending")
+            {
+                Array.Reverse(array);
+                return string.Join(",", array);
+            }
+            return "Please enter a valid sort type.";
+
         }
 
+        public int sumOfDigit(int n)
+        {
+            int sum = 0, m;
+
+            while (n > 0)
+            {
+                m = n % 10;
+                sum = sum + m;
+                n = n / 10;
+            }
+            return sum;
+        }
     }
 }

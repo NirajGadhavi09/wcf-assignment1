@@ -15,13 +15,13 @@ namespace wcf_assignment1
         [OperationContract]
         string primeNo(int num);
         [OperationContract]
-        string sumOfDigit(int num);
+        int sumOfDigit(int sumNum);
         [OperationContract]
         string reverseString(string value);
         [OperationContract]
         string htmlTags(string valueTag, string htmlData);
         [OperationContract]
-        string sortFiveNumbers(int[] num, string sortingNumbers);
+        string sortFiveNumbers(string sortAscDesc, string sortingNumbers);
 
     }
 }

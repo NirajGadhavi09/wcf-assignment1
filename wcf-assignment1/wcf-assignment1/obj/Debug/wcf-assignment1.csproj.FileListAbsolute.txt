@@ -1,7 +1,7 @@
+N:\CPA\SEM 5\Programming Distributed Applications Development\Assignment\Assignment 1\wcf-assignment1\wcf-assignment1\obj\Debug\wcf-assignment1.csproj.AssemblyReference.cache
+N:\CPA\SEM 5\Programming Distributed Applications Development\Assignment\Assignment 1\wcf-assignment1\wcf-assignment1\obj\Debug\wcf-assignment1.csproj.CoreCompileInputs.cache
 N:\CPA\SEM 5\Programming Distributed Applications Development\Assignment\Assignment 1\wcf-assignment1\wcf-assignment1\bin\wcf-assignment1.dll.config
 N:\CPA\SEM 5\Programming Distributed Applications Development\Assignment\Assignment 1\wcf-assignment1\wcf-assignment1\bin\wcf-assignment1.dll
 N:\CPA\SEM 5\Programming Distributed Applications Development\Assignment\Assignment 1\wcf-assignment1\wcf-assignment1\bin\wcf-assignment1.pdb
-N:\CPA\SEM 5\Programming Distributed Applications Development\Assignment\Assignment 1\wcf-assignment1\wcf-assignment1\obj\Debug\wcf-assignment1.csproj.AssemblyReference.cache
-N:\CPA\SEM 5\Programming Distributed Applications Development\Assignment\Assignment 1\wcf-assignment1\wcf-assignment1\obj\Debug\wcf-assignment1.csproj.CoreCompileInputs.cache
 N:\CPA\SEM 5\Programming Distributed Applications Development\Assignment\Assignment 1\wcf-assignment1\wcf-assignment1\obj\Debug\wcf-assignment1.dll
 N:\CPA\SEM 5\Programming Distributed Applications Development\Assignment\Assignment 1\wcf-assignment1\wcf-assignment1\obj\Debug\wcf-assignment1.pdb

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace wcf_assignment1.ServiceReference1 {
+namespace WCF_Application_Console.ServiceReference1 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -22,10 +22,10 @@ namespace wcf_assignment1.ServiceReference1 {
         System.Threading.Tasks.Task<string> primeNoAsync(int num);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/sumOfDigit", ReplyAction="http://tempuri.org/IService1/sumOfDigitResponse")]
-        string sumOfDigit(int num);
+        int sumOfDigit(int sumNum);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/sumOfDigit", ReplyAction="http://tempuri.org/IService1/sumOfDigitResponse")]
-        System.Threading.Tasks.Task<string> sumOfDigitAsync(int num);
+        System.Threading.Tasks.Task<int> sumOfDigitAsync(int sumNum);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/reverseString", ReplyAction="http://tempuri.org/IService1/reverseStringResponse")]
         string reverseString(string value);
@@ -40,19 +40,19 @@ namespace wcf_assignment1.ServiceReference1 {
         System.Threading.Tasks.Task<string> htmlTagsAsync(string valueTag, string htmlData);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/sortFiveNumbers", ReplyAction="http://tempuri.org/IService1/sortFiveNumbersResponse")]
-        string sortFiveNumbers(int[] num, string sortingNumbers);
+        string sortFiveNumbers(string sortAscDesc, string sortingNumbers);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/sortFiveNumbers", ReplyAction="http://tempuri.org/IService1/sortFiveNumbersResponse")]
-        System.Threading.Tasks.Task<string> sortFiveNumbersAsync(int[] num, string sortingNumbers);
+        System.Threading.Tasks.Task<string> sortFiveNumbersAsync(string sortAscDesc, string sortingNumbers);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IService1Channel : wcf_assignment1.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
+    public interface IService1Channel : WCF_Application_Console.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class Service1Client : System.ServiceModel.ClientBase<wcf_assignment1.ServiceReference1.IService1>, wcf_assignment1.ServiceReference1.IService1 {
+    public partial class Service1Client : System.ServiceModel.ClientBase<WCF_Application_Console.ServiceReference1.IService1>, WCF_Application_Console.ServiceReference1.IService1 {
         
         public Service1Client() {
         }
@@ -81,12 +81,12 @@ namespace wcf_assignment1.ServiceReference1 {
             return base.Channel.primeNoAsync(num);
         }
         
-        public string sumOfDigit(int num) {
-            return base.Channel.sumOfDigit(num);
+        public int sumOfDigit(int sumNum) {
+            return base.Channel.sumOfDigit(sumNum);
         }
         
-        public System.Threading.Tasks.Task<string> sumOfDigitAsync(int num) {
-            return base.Channel.sumOfDigitAsync(num);
+        public System.Threading.Tasks.Task<int> sumOfDigitAsync(int sumNum) {
+            return base.Channel.sumOfDigitAsync(sumNum);
         }
         
         public string reverseString(string value) {
@@ -105,12 +105,12 @@ namespace wcf_assignment1.ServiceReference1 {
             return base.Channel.htmlTagsAsync(valueTag, htmlData);
         }
         
-        public string sortFiveNumbers(int[] num, string sortingNumbers) {
-            return base.Channel.sortFiveNumbers(num, sortingNumbers);
+        public string sortFiveNumbers(string sortAscDesc, string sortingNumbers) {
+            return base.Channel.sortFiveNumbers(sortAscDesc, sortingNumbers);
         }
         
-        public System.Threading.Tasks.Task<string> sortFiveNumbersAsync(int[] num, string sortingNumbers) {
-            return base.Channel.sortFiveNumbersAsync(num, sortingNumbers);
+        public System.Threading.Tasks.Task<string> sortFiveNumbersAsync(string sortAscDesc, string sortingNumbers) {
+            return base.Channel.sortFiveNumbersAsync(sortAscDesc, sortingNumbers);
         }
     }
 }

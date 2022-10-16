@@ -1,0 +1,8 @@
+N:\CPA\SEM 5\Programming Distributed Applications Development\Assignment\Assignment 1\wcf-assignment1\WCF Application Console\obj\Debug\WCF Application Console.csproj.AssemblyReference.cache
+N:\CPA\SEM 5\Programming Distributed Applications Development\Assignment\Assignment 1\wcf-assignment1\WCF Application Console\obj\Debug\WCF Application Console.csproj.SuggestedBindingRedirects.cache
+N:\CPA\SEM 5\Programming Distributed Applications Development\Assignment\Assignment 1\wcf-assignment1\WCF Application Console\obj\Debug\WCF Application Console.csproj.CoreCompileInputs.cache
+N:\CPA\SEM 5\Programming Distributed Applications Development\Assignment\Assignment 1\wcf-assignment1\WCF Application Console\bin\Debug\WCF Application Console.exe.config
+N:\CPA\SEM 5\Programming Distributed Applications Development\Assignment\Assignment 1\wcf-assignment1\WCF Application Console\bin\Debug\WCF Application Console.exe
+N:\CPA\SEM 5\Programming Distributed Applications Development\Assignment\Assignment 1\wcf-assignment1\WCF Application Console\bin\Debug\WCF Application Console.pdb
+N:\CPA\SEM 5\Programming Distributed Applications Development\Assignment\Assignment 1\wcf-assignment1\WCF Application Console\obj\Debug\WCF Application Console.exe
+N:\CPA\SEM 5\Programming Distributed Applications Development\Assignment\Assignment 1\wcf-assignment1\WCF Application Console\obj\Debug\WCF Application Console.pdb
