@@ -36,11 +36,10 @@ namespace WCF_Application_Console
                         break;
 
                     case "2":
-                        Console.WriteLine("\nEnter any digits to do a sum of them: ");
+                        Console.WriteLine("Enter a number to do a sum of all digits: ");
                         num = int.Parse(Console.ReadLine());
-
-                        int result2 = service1Client.sumOfDigit(num);
-                        Console.WriteLine(result2);
+                        int output = service1Client.sumOfDigit(num);
+                        Console.WriteLine(output);
                         break;
 
                     case "3":
@@ -59,7 +58,7 @@ namespace WCF_Application_Console
                     case "5":
                         Console.Write("Enter a sorting type ascending or descending: ");
                         string sortingNum = Console.ReadLine();
-                        Console.Write("Enter a list of integer: ");
+                        Console.Write("Enter a list of integer with commas(,): ");
                         string array = Console.ReadLine();
                         Console.WriteLine(service1Client.sortFiveNumbers(sortingNum, array));
                         break;

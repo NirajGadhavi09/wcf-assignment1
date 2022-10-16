@@ -18,16 +18,16 @@ namespace wcf_assignment1
         {
 
             int i;
-            int temp = num / 2;
+            int flag = num / 2;
 
-            for (i = 2; i <= temp; i++)
+            for (i = 2; i <= flag; i++)
             {
                 if (num % i == 0)
                 {
                     break;
                 }
             }
-            if (i > temp)
+            if (i > flag)
             {
                 return "It's a is Prime Number";
             }
@@ -37,7 +37,18 @@ namespace wcf_assignment1
             }
         }
 
-        
+        public int sumOfDigit(int x)
+        {
+            int sum = 0, y;
+
+            while (x > 0)
+            {
+                y = x % 10;
+                sum = sum + y;
+                x = x / 10;
+            }
+            return sum;
+        }
 
         public string reverseString(string value)
         {
@@ -67,21 +78,10 @@ namespace wcf_assignment1
                 Array.Reverse(array);
                 return string.Join(",", array);
             }
-            return "Please enter a valid sort type.";
+            return "Please enter a valid input for sorting.";
 
         }
 
-        public int sumOfDigit(int n)
-        {
-            int sum = 0, m;
-
-            while (n > 0)
-            {
-                m = n % 10;
-                sum = sum + m;
-                n = n / 10;
-            }
-            return sum;
-        }
+        
     }
 }
